@@ -1,0 +1,85 @@
+.modal-shade {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0%;
+  left: 0;
+  bottom: 0%;
+  right: 0;
+
+  background: rgba(0, 0, 0, 0.8);
+
+  overflow: hidden;
+
+  z-index: 111;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    visibility: hidden;
+
+    font-size: 0.9em;
+    line-height: 1.5em;
+
+    width: 50%;
+
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 5px 20px -8px $shadow-dark;
+
+    overflow: hidden;
+
+    transition: all 0.5s ease-in-out;
+
+    z-index: 1111;
+
+    @media (max-width: $tablet) {
+      width: 90%;
+    }
+
+    &.active {
+      visibility: visible;
+      transform: translate(-50%, -50%);
+    }
+
+    a {
+      display: inline;
+      color: $accent;
+    }
+
+    .modal-content {
+      padding: 20px;
+    }
+
+    .modal-close {
+      float: right;
+      margin-top: -20px;
+
+      height: 20px;
+      width: 20px;
+
+      line-height: 20px;
+      text-align: center;
+
+      border: none;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      outline: none;
+
+      cursor: pointer;
+    }
+
+    .modal-header,
+    .modal-footer {
+      padding: 20px;
+    }
+  }
+}

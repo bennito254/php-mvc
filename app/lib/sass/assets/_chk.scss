@@ -1,0 +1,53 @@
+// Importing fontawesome icons
+@import "https://use.fontawesome.com/releases/v5.8.1/css/all.css";
+
+// The checkbox label
+.chklabel {
+  cursor: pointer;
+
+  &::before {
+    content: "\f0c8";
+
+    color: #000;
+
+    font-family: "Font Awesome 5 Free";
+
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
+    display: inline-block;
+    width: 1em;
+    margin-right: 5px;
+  }
+
+  &-primary {
+    &::before {
+      color: $accent;
+    }
+  }
+
+  &-secondary {
+    &::before {
+      color: $dark-txt;
+    }
+  }
+
+  &--disabled {
+    @extend .label;
+    opacity: 0.3;
+  }
+}
+
+// The checkbox
+.input-chk {
+  display: none;
+
+  &:checked + .label::before {
+    content: "\f14a";
+    animation: check 0.2s;
+  }
+}

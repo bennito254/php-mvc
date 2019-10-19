@@ -1,0 +1,158 @@
+// Tag colors
+@mixin tag($type: none, $fxColor: false, $fxBorder: false, $fxBg: false) {
+  @if ($type == trending) {
+    @if ($fxColor == true) {
+      color: darken($trending, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($trending, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $trending,
+        transparentize($trending, 1)
+      );
+    }
+  } @else if($type == popular) {
+    @if ($fxColor == true) {
+      color: darken($popular, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($popular, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $popular,
+        transparentize($popular, 1)
+      );
+    }
+  } @else if($type == featured) {
+    @if ($fxColor == true) {
+      color: darken($featured, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($featured, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $featured,
+        transparentize($featured, 1)
+      );
+    }
+  } @else if($type == news) {
+    @if ($fxColor == true) {
+      color: darken($news, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($news, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $news,
+        transparentize($news, 1)
+      );
+    }
+  } @else if($type == sports) {
+    @if ($fxColor == true) {
+      color: darken($sports, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($sports, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $sports,
+        transparentize($sports, 1)
+      );
+    }
+  } @else if($type == music) {
+    @if ($fxColor == true) {
+      color: darken($music, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($music, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $music,
+        transparentize($music, 1)
+      );
+    }
+  } @else if($type == movies) {
+    @if ($fxColor == true) {
+      color: darken($movies, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($movies, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $movies,
+        transparentize($movies, 1)
+      );
+    }
+  } @else if($type == fashion) {
+    @if ($fxColor == true) {
+      color: darken($fashion, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($fashion, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $fashion,
+        transparentize($fashion, 1)
+      );
+    }
+  } @else if($type == webdev) {
+    @if ($fxColor == true) {
+      color: darken($web-dev, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($web-dev, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $web-dev,
+        transparentize($web-dev, 1)
+      );
+    }
+  } @else if($type == tech) {
+    @if ($fxColor == true) {
+      color: darken($tech, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($tech, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $tech,
+        transparentize($tech, 1)
+      );
+    }
+  } @else if($type == accent) {
+    @if ($fxColor == true) {
+      color: darken($accent-p, 20%);
+    }
+    @if ($fxBorder == true) {
+      border-color: darken($accent-p, 30%);
+    }
+    @if ($fxBg == true) {
+      background: linear-gradient(
+        to bottom left,
+        $accent-p,
+        transparentize($accent-p, 1)
+      );
+    }
+  }
+}

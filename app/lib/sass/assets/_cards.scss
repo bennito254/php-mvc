@@ -1,0 +1,405 @@
+.card {
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+
+  text-align: left;
+
+  overflow: hidden;
+
+  @media (max-width: $tablet) {
+    margin: 10px auto;
+    width: 100%;
+  }
+
+  &:hover {
+    .card_head img {
+      transform: scale(1.1);
+    }
+  }
+
+  video {
+    height: 100%;
+  }
+
+  .card_head {
+    position: relative;
+    max-height: 350px;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      transition: 1s;
+    }
+
+    @media (max-width: $tablet) {
+      max-height: 250px;
+    }
+
+    &-mini {
+      @extend .card_head;
+      max-height: 200px;
+    }
+  }
+
+  .card_body {
+    margin: 10px auto;
+    padding: 20px;
+    width: 100%;
+
+    .card_tags,
+    .card_title,
+    .card_author,
+    .card_text,
+    .card_details {
+      padding: 0 10px;
+      margin: 10px 0;
+    }
+
+    .card_tags {
+      margin: 10px auto;
+
+      display: flex;
+      font-size: 0.8em;
+
+      @media (max-width: $mobile) {
+        font-size: 0.6em;
+      }
+
+      a {
+        padding: 5px 10px;
+        margin-right: 20px;
+
+        color: $light-txt;
+        font-size: 0.8em;
+
+        border-radius: 25px;
+        background: $accent;
+      }
+    }
+
+    .card_title {
+      a {
+        color: $dark-txt;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 0.9em;
+      }
+    }
+
+    .card_author {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      max-width: 300px;
+      font-size: 0.75em;
+
+      a {
+        color: $dark-txt;
+      }
+
+      .card_author_image {
+        height: 25px;
+        width: 25px;
+        flex: 0 0 25px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+
+    .card_details {
+      padding: 10px 0 0 0;
+      margin-bottom: 0%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      border-top: solid 1px darken($body, 10%);
+
+      font-size: 0.6em;
+
+      @media (max-width: $tablet) {
+        font-size: 0.7em;
+      }
+
+      @media (max-width: $mobile) {
+        font-size: 0.6em;
+      }
+
+      .card_likes,
+      .card_comments,
+      .card_views {
+        a {
+          color: $dark-txt;
+        }
+      }
+    }
+
+    .card_text {
+      font-size: 0.8em;
+      line-height: 1.5em;
+      overflow: hidden;
+    }
+  }
+
+  &-mini {
+    @extend .card;
+    max-width: 300px;
+
+    .card_head {
+      max-height: 150px;
+    }
+
+    .card_body {
+      padding: 0px;
+
+      .card_tags {
+        font-size: 0.65em;
+        a {
+          padding: 0%;
+          background: none;
+          color: $accent;
+        }
+      }
+
+      .card_title {
+        font-size: 0.9em;
+
+        @media (max-width: $mobile) {
+          font-size: 0.8em;
+        }
+      }
+
+      .card_author,
+      .card_details {
+        font-size: 0.6em;
+      }
+    }
+  }
+
+  &--flex {
+    @extend .card;
+
+    display: flex;
+
+    @media (max-width: $mobile-lc) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+
+    .card_head {
+      max-height: 250px;
+      flex: 0 0 30%;
+
+      @media (max-width: $mobile-lc) {
+        max-height: 250px;
+      }
+    }
+
+    &-mini {
+      @extend .card--flex;
+      max-height: 200px;
+
+      @media (min-width: $mobile-sm) {
+        display: flex;
+        flex-flow: row nowrap;
+      }
+
+      .card_head {
+        @media (max-width: $mobile-sm) {
+          display: none;
+        }
+      }
+
+      .card_body {
+        padding: 0%;
+
+        .card_tags {
+          margin: 0%;
+          font-size: 0.65em;
+
+          a {
+            padding: 0%;
+            background: none;
+            color: $accent;
+          }
+        }
+
+        .card_title {
+          font-size: 0.9em;
+
+          @media (max-width: $mobile) {
+            font-size: 0.8em;
+          }
+        }
+
+        .card_author,
+        .card_details {
+          font-size: 0.6em;
+        }
+
+        .card_details {
+          @media (max-width: $mobile) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  &--overlay {
+    @extend .card;
+    color: $light-txt;
+    height: 400px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      bottom: 0%;
+      right: 0%;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    &-dark {
+      @extend .card--overlay;
+
+      &::before {
+        background: linear-gradient(to top right, #000, rgba(0, 0, 0, 0.5));
+      }
+    }
+
+    &-theme {
+      @extend .card--overlay;
+
+      &::before {
+        background: linear-gradient(
+          to bottom left,
+          transparentize($accent, 0.5),
+          $secondary
+        );
+      }
+    }
+
+    .card_head {
+      max-height: unset;
+      height: 100%;
+    }
+
+    .card_body {
+      position: absolute;
+      left: 0%;
+      bottom: 0%;
+      width: 70%;
+
+      z-index: 2;
+
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+
+      .card_title {
+        a {
+          color: $light-txt;
+        }
+      }
+
+      .card_author {
+        a {
+          color: $light-txt;
+        }
+      }
+
+      .card_details {
+        border-color: #fff;
+
+        .card_likes,
+        .card_comments,
+        .card_views {
+          a {
+            color: $light-txt;
+          }
+        }
+      }
+    }
+  }
+
+  &--media {
+    @extend .card;
+    max-width: 400px;
+
+    box-shadow: none;
+
+    .card_head {
+      max-height: unset;
+    }
+
+    audio {
+      margin: 10px 0;
+    }
+  }
+}
+
+.cms_card {
+  padding: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: #fff;
+  color: #fff;
+  border-radius: 25px;
+
+  overflow: hidden;
+
+  h1 {
+    font-size: 1.5em;
+    font-family: "lightText";
+
+    @media (max-width: $mobile) {
+      font-size: unset;
+    }
+  }
+
+  a {
+    color: $light-txt;
+  }
+
+  .card {
+    &_stats {
+      margin-right: 20px;
+      height: 100px;
+      width: 100px;
+      flex: 0 0 100px;
+
+      display: grid;
+      place-items: center;
+
+      font-size: 2em;
+      font-family: "subHeading";
+
+      border-radius: 50%;
+
+      @media (max-width: $mobile-lc) {
+        height: 60px;
+        width: 60px;
+        flex: 0 0 60px;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

@@ -1,0 +1,468 @@
+@mixin btnColor($type: primary, $outline: false, $neutral: false) {
+  // Primary button colors
+  @if $type== primary {
+    @if $outline== true {
+      color: $btn-primary-bg;
+      background: none;
+      border: solid 1px $btn-primary-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-primary-bg;
+      }
+    } @else if $neutral== true {
+      background: none;
+      border: none;
+      color: $btn-primary-bg;
+
+      &:hover {
+        background: none;
+        color: darken($btn-primary-bg, 20%);
+      }
+    } @else {
+      background: $btn-primary-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-primary-bg, 5%);
+        color: $btn-light-txt;
+      }
+    }
+  }
+
+  // Secondary button colors
+  @else if $type== secondary {
+    @if $outline== true {
+      color: $btn-secondary-bg;
+      background: none;
+      border: solid 1px $btn-secondary-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-secondary-bg;
+      }
+    } @else if $neutral== true {
+      color: $btn-secondary-bg;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        color: darken($btn-secondary-bg, 20%);
+      }
+    } @else {
+      background: $btn-secondary-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-secondary-bg, 10%);
+      }
+    }
+  }
+
+  // Info button colors
+  @else if $type== info {
+    @if $outline== true {
+      color: $btn-info-bg;
+      background: none;
+      border: solid 1px $btn-info-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-info-bg;
+      }
+    } @else if $neutral== true {
+      color: $btn-info-bg;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        color: darken($btn-info-bg, 20%);
+      }
+    } @else {
+      background: $btn-info-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-info-bg, 10%);
+      }
+    }
+  }
+
+  // Dark button colors
+  @else if $type== dark {
+    @if $outline== true {
+      color: $btn-dark-txt;
+      background: none;
+      border: solid 1px $btn-dark-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-dark-bg;
+      }
+    } @else if $neutral== true {
+      color: $btn-dark-bg;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        color: darken($btn-dark-bg, 20%);
+      }
+    } @else {
+      background: $btn-dark-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-dark-bg, 10%);
+      }
+    }
+  }
+
+  // Danger button colors
+  @else if $type== danger {
+    @if $outline== true {
+      color: $btn-danger-bg;
+      background: none;
+      border: solid 1px $btn-danger-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-danger-bg;
+      }
+    } @else if $neutral== true {
+      color: $btn-danger-bg;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        color: darken($btn-danger-bg, 20%);
+      }
+    } @else {
+      background: $btn-danger-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-danger-bg, 10%);
+      }
+    }
+  }
+
+  // Warning button colors
+  @else if $type== warning {
+    @if $outline== true {
+      color: $btn-warning-bg;
+      background: none;
+      border: solid 1px $btn-warning-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-warning-bg;
+      }
+    } @else if $neutral== true {
+      color: $btn-warning-bg;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        color: darken($btn-warning-bg, 20%);
+      }
+    } @else {
+      background: $btn-warning-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-warning-bg, 10%);
+      }
+    }
+  }
+
+  // Success button colors
+  @else if $type== success {
+    @if $outline== true {
+      color: $btn-success-bg;
+      background: none;
+      border: solid 1px $btn-success-bg;
+
+      &:hover {
+        color: $btn-light-txt;
+        background: $btn-success-bg;
+      }
+    } @else if $neutral== true {
+      color: $btn-success-bg;
+      background: none;
+      border: none;
+
+      &:hover {
+        background: none;
+        color: darken($btn-success-bg, 20%);
+      }
+    } @else {
+      background: $btn-success-bg;
+      color: $btn-light-txt;
+
+      &:hover {
+        background: darken($btn-success-bg, 10%);
+      }
+    }
+  }
+}
+
+.btn {
+  padding: 8px;
+
+  display: inline-block;
+
+  outline: none;
+  border: none;
+
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9em;
+  white-space: nowrap;
+
+  vertical-align: middle;
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  color: $btn-dark-txt;
+
+  /* Button modifiers */
+
+  // Modifier: Makes a large button
+  &--lg {
+    @extend .btn;
+    padding: 15px;
+  }
+
+  // Modifier: Makes a small button
+  &--small {
+    @extend .btn;
+    font-size: 0.7em;
+    padding: 5px 10px;
+  }
+
+  // Modifier: Makes a full width button
+  &--fit {
+    @extend .btn;
+    display: block;
+    width: 100%;
+  }
+
+  // Modifier: Makes a half width button
+  &--half-fit {
+    @extend .btn;
+    margin: auto;
+    display: block;
+    width: 50%;
+  }
+
+  // Modifier: Makes a rounded button
+  &--rounded {
+    @extend .btn;
+    border-radius: 25px;
+  }
+
+  // Modifier: Makes an edgy button
+  &--edgy {
+    @extend .btn;
+    border-radius: 0;
+  }
+
+  // Applies styling for a disabled button
+  &-disabled,
+  &:disabled {
+    @extend .btn;
+    opacity: 0.5;
+    color: $light-txt;
+    background: #999;
+
+    &:hover {
+      background: #999;
+    }
+  }
+
+  /* Button types */
+
+  // The primary button
+  &-primary {
+    @extend .btn;
+
+    @include btnColor(primary);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-primary;
+
+      @include btnColor(primary, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-primary;
+
+      @include btnColor(primary, false, true);
+    }
+  }
+
+  // The secondary button
+  &-secondary {
+    @extend .btn;
+
+    @include btnColor(secondary);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-secondary;
+
+      @include btnColor(secondary, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-secondary;
+
+      @include btnColor(secondary, false, true);
+    }
+  }
+
+  // The secondary button
+  &-success {
+    @extend .btn;
+
+    @include btnColor(success);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-success;
+
+      @include btnColor(success, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-success;
+
+      @include btnColor(success, false, true);
+    }
+  }
+
+  // The info button
+  &-info {
+    @extend .btn;
+
+    @include btnColor(info);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-info;
+
+      @include btnColor(info, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-info;
+
+      @include btnColor(info, false, true);
+    }
+  }
+
+  // The dark button
+  &-dark {
+    @extend .btn;
+
+    @include btnColor(dark);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-dark;
+
+      @include btnColor(dark, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-dark;
+
+      @include btnColor(dark, false, true);
+    }
+  }
+
+  // The danger button
+  &-danger {
+    @extend .btn;
+
+    @include btnColor(danger);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-danger;
+
+      @include btnColor(danger, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-danger;
+
+      @include btnColor(danger, false, true);
+    }
+  }
+
+  // The warning button
+  &-warning {
+    @extend .btn;
+
+    @include btnColor(warning);
+
+    // Modifier: Makes an outlined button
+    &--outline {
+      @extend .btn-warning;
+
+      @include btnColor(warning, true);
+    }
+
+    // Modifier: Makes text button
+    &--neutral {
+      @extend .btn-warning;
+
+      @include btnColor(warning, false, true);
+    }
+  }
+
+  // The icon button
+  &-icon {
+    @extend .btn;
+
+    padding: 0%;
+    height: 35px;
+
+    width: 35px;
+    flex: 0 0 35px;
+
+    line-height: 2.4;
+
+    &:hover {
+      background: darken(#fff, 5%) !important;
+    }
+
+    &:active {
+      background: darken(#fff, 10%) !important;
+    }
+
+    &.active {
+      background: darken(#fff, 10%) !important;
+    }
+
+    // Modifier: Makes the icon button appear circular
+    &--circle {
+      @extend .btn-icon;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/*
+   Breakpoints
+*/
+$mobile-sm: 320px; // Mobile small
+$mobile: 425px; // Mobile potrait
+$mobile-lc: 577px; // Mobile landscape
+$tablet: 834px; // Tablet potrait or mobile landscape
+$tablet-lc: 1112px; // Landscape tablet or small laptop
+$laptop: 1440px; // Laptop large
+$desktop: 1880px; // Desktop
+
+/*
+   Website colors
+*/
+$body: #f9f9f9;
+$primary: #f05555; // Primary color
+$accent: #f05555; // Accent color
+$secondary: #3c4cad; // Secondary color
+$info: #2962ff; // Info color
+$dark: #333333; // Dark color
+$danger: #f44336; // Danger color
+$success: #4caf50; // Success color
+$warning: #ff9800; // Warning color
+
+/*
+   Text colors
+*/
+$dark-txt: #333; // Dark text color
+$light-txt: #fff; // Light text colors
+
+/*
+   Shadow colors
+*/
+$shadow-dark: #333; // Dark shadow
+$shadow-light: darken($body, 30%); //Light shadow
+
+/*
+   Button colors
+*/
+// Text colors
+$btn-light-txt: #fff; // Btn light text
+$btn-dark-txt: #222; // Btn dark text
+
+// Background colors
+$btn-primary-bg: $primary; // Primary btn
+$btn-secondary-bg: $secondary; // Secondary btn
+$btn-success-bg: $success; // Success btn
+$btn-info-bg: $info; // Success btn
+$btn-dark-bg: $dark; // Dark btn
+$btn-danger-bg: $danger; // Danger btn
+$btn-warning-bg: $warning; // Warning btn
+
+$cols: 12; // Grid/Flex columns
+$spacing: 10; // All padding and margins
+
+// Tags && Categories
+$trending: lighten(#2196f3, 30%);
+$popular: lighten(#ffa000, 30%);
+$featured: lighten(#388e3c, 30%);
+
+$news: lighten(#e53935, 30%);
+$sports: lighten(#4caf50, 30%);
+$music: lighten(#f57c00, 30%);
+$web-dev: lighten(#9c27b0, 30%);
+$movies: lighten(#d32f2f, 30%);
+$fashion: lighten(#e91e63, 30%);
+$tech: lighten(#2962ff, 30%);
+
+$accent-p: lighten(#9e9e9e, 30%);
+
+/* RGB */
+// $color1: rgba(255, 0, 0, 1);
+// $color2: rgba(248, 249, 247, 1);
+// $color3: rgba(1, 22, 56, 1);
+// $color4: rgba(255, 255, 255, 1);
+// $color5: rgba(0, 0, 0, 1);

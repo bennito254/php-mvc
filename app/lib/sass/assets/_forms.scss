@@ -1,0 +1,150 @@
+// Input wrappers
+.input-wrapper {
+  margin: 10px auto;
+  width: 100%;
+
+  &--outer {
+    @extend .input-wrapper;
+    display: flex;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &--inner {
+    @extend .input-wrapper;
+
+    &-dent {
+      @extend .input-wrapper--inner;
+      margin-right: 10px;
+    }
+  }
+
+  &--radio {
+    @extend .input-wrapper;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  &--chkbox {
+    @extend .input-wrapper;
+    margin: 1.5pc auto;
+    display: flex;
+    text-align: left;
+    align-content: center;
+    align-items: center;
+
+    .label {
+      font-size: 0.8em;
+    }
+
+    .input {
+      margin: 0% 10px;
+      width: unset;
+    }
+  }
+}
+
+// Label and error
+.label,
+.msg {
+  line-height: 1.5em;
+}
+
+.label {
+  font-size: 0.9em;
+
+  &-input {
+    @extend .input;
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+.msg {
+  font-size: 0.7em;
+
+  &-error {
+    @extend .msg;
+    color: $danger;
+    display: none;
+
+    &.on {
+      display: block;
+    }
+  }
+
+  &-foo {
+    @extend .msg;
+    margin: 1.5px 0;
+
+    &--center {
+      @extend .msg-foo;
+      text-align: center;
+    }
+
+    &--right {
+      @extend .msg-foo;
+      text-align: right;
+    }
+  }
+}
+
+// Input fields
+.input,
+.label-input {
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+
+  background: #fff;
+  border: solid 1px #888;
+  border-radius: 5px;
+
+  transition: 0.3s ease;
+  outline: none;
+
+  &::placeholder {
+    letter-spacing: 0.5px;
+  }
+
+  &[type="radio"],
+  &[type="checkbox"] {
+    &:focus {
+      border: none;
+    }
+  }
+
+  &[type="file"] {
+    display: none;
+  }
+
+  &:focus {
+    border-color: $accent;
+  }
+
+  &--fill {
+    @extend .input;
+    background: darken(#fff, 3%);
+    border: solid 1px darken(#fff, 10%);
+
+    &:focus {
+      border-color: solid 1px darken(#fff, 10%);
+    }
+  }
+
+  &--edgy {
+    @extend .input;
+    border-radius: 0;
+  }
+
+  &--rounded {
+    @extend .input;
+    border-radius: 25px;
+  }
+}

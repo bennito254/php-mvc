@@ -1,0 +1,497 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "regText";
+  background: $body;
+  color: $dark-txt;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    background: darken($body, 10%);
+    border-radius: unset;
+  }
+
+  &::-webkit-scrollbar-button {
+    background: darken($body, 30%);
+    border-radius: unset;
+
+    &:hover {
+      background: darken($body, 50%);
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $accent;
+    border-radius: unset;
+
+    &:hover {
+      background: darken($accent, 20%);
+    }
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background: darken($body, 10%);
+  border-radius: 25px;
+
+  @media (max-width: $tablet) {
+    display: none;
+  }
+}
+
+*::-webkit-scrollbar-button {
+  background: darken($body, 30%);
+  border-radius: 25px;
+
+  &:hover {
+    background: darken($body, 50%);
+  }
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $accent;
+  border-radius: 25px;
+
+  &:hover {
+    background: darken($accent, 20%);
+  }
+}
+
+// All the elements containing the `data-src` attribute
+[data-src] {
+  opacity: 0;
+  transform: scale(0.5);
+  filter: blur(5px);
+
+  transition: all 0.5s;
+
+  &.loaded {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+img,
+video,
+audio {
+  width: 100%;
+}
+
+img {
+  object-fit: cover;
+  transition: 0.3s linear;
+}
+
+audio {
+  outline: none;
+}
+
+// Typography
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "mainHeading";
+}
+
+h2 {
+  font-family: "subHeading";
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: "lightText";
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 1.8;
+}
+
+span.opt {
+  width: 150px;
+  position: relative;
+  display: block;
+  font-size: 1em;
+  left: 50%;
+  transform: translateX(-60%);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 1px;
+
+    background: darken($body, 10%);
+  }
+
+  &::before {
+    right: 95px;
+  }
+
+  &::after {
+    left: 95px;
+  }
+}
+
+figcaption {
+  line-height: 3;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+blockquote {
+  padding: 20px;
+  margin: 20px auto;
+
+  width: 95%;
+
+  position: relative;
+
+  font-size: 0.9em;
+  line-height: 1.8;
+  font-style: italic;
+
+  background: #f9f9f9;
+  border-left: solid 2px $accent;
+
+  .fas {
+    opacity: 0.3;
+    font-size: 2em;
+    color: $secondary;
+    position: absolute;
+  }
+
+  .fas-l {
+    top: 10px;
+    left: 10px;
+  }
+
+  .fas-r {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@for $i from 1 through $spacing {
+  .pd-#{$i} {
+    padding: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      padding: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      padding: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .pd-r-#{$i} {
+    padding-right: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      padding-right: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      padding-right: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .pd-l-#{$i} {
+    padding-left: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      padding-left: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      padding-left: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .pd-t-#{$i} {
+    padding-top: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      padding-top: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      padding-top: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .pd-b-#{$i} {
+    padding-bottom: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      padding-bottom: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      padding-bottom: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .mg-#{$i} {
+    margin: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      margin: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      margin: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .mg-r-#{$i} {
+    margin-right: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      margin-right: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      margin-right: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .mg-l-#{$i} {
+    margin-left: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      margin-left: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      margin-left: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .mg-t-#{$i} {
+    margin-top: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      margin-top: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      margin-top: ($i * 5px);
+    }
+  }
+}
+
+@for $i from 1 through $spacing {
+  .mg-b-#{$i} {
+    margin-bottom: ($i * 10px);
+
+    @media (max-width: $tablet-lc) {
+      margin-bottom: ($i * 7px);
+    }
+
+    @media (max-width: $mobile-lc) {
+      margin-bottom: ($i * 5px);
+    }
+  }
+}
+
+// Typography
+.txt {
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-center {
+    text-align: center;
+  }
+}
+
+// Layout
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.display {
+  display: block;
+
+  &-none {
+    display: none;
+  }
+
+  &-flex {
+    display: flex;
+  }
+
+  &-grid {
+    display: grid;
+  }
+}
+
+.bg {
+  background: $body !important;
+
+  &-white {
+    @extend .bg;
+    background: #fff !important;
+  }
+
+  &-primary {
+    @extend .bg;
+    background: $primary !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($primary, 5%),
+        lighten($primary, 20%)
+      ) !important;
+    }
+  }
+
+  &-secondary {
+    @extend .bg;
+    background: $secondary !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($secondary, 5%),
+        lighten($secondary, 20%)
+      ) !important;
+    }
+  }
+
+  &-dark {
+    @extend .bg;
+    background: $dark !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($dark, 5%),
+        lighten($dark, 20%)
+      ) !important;
+    }
+  }
+
+  &-danger {
+    @extend .bg;
+    background: $danger !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($danger, 5%),
+        lighten($danger, 20%)
+      ) !important;
+    }
+  }
+
+  &-warning {
+    @extend .bg;
+    background: $warning !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($warning, 5%),
+        lighten($warning, 20%)
+      ) !important;
+    }
+  }
+
+  &-success {
+    @extend .bg;
+    background: $success !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($success, 5%),
+        lighten($success, 20%)
+      ) !important;
+    }
+  }
+
+  &-info {
+    @extend .bg;
+    background: $info !important;
+
+    &--gradient {
+      background: linear-gradient(
+        to bottom right,
+        darken($info, 5%),
+        lighten($info, 20%)
+      ) !important;
+    }
+  }
+}
+
+.curved {
+  border-radius: 5px;
+}
+
+.border {
+  border: solid 1px darken($body, 10%);
+}
+
+.shadow {
+  box-shadow: 2px 2px 5px $shadow-light;
+}
+
+// Fx
+.blur {
+  filter: blur(3px);
+}

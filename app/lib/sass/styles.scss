@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+@import "./assets/fonts"; // Import all the required font styling
+
+@import "./includes/variables"; // Import all the required variables
+
+@import "./includes/animations"; // All the animations
+
+@import "./includes/layout"; // Project layouts
+
+// Assets
+@import "./assets/loader"; // Loading animation
+@import "./assets/buttons"; // All button stylings
+@import "./assets/forms"; // All forms styling
+@import "./assets/modals"; // All modals stylings
+@import "./assets/chk"; // The check box
+@import "./assets/cards"; // Cards holding posts
+
+@import "./includes/resets"; // All the global resets
+
+@import "./includes/mixins"; // All the global mixins
+
+// Components
+@import "./menus"; // The header, footer and other menus
+
+@import "./main"; // Import the main styling

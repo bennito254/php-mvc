@@ -1,0 +1,405 @@
+// The back-to-top button
+.btn.back {
+  position: fixed;
+  bottom: -20px;
+  right: 20px;
+
+  height: 30px;
+  width: 30px;
+
+  box-shadow: 0 0 20px -10px $shadow-dark;
+
+  z-index: 8;
+
+  opacity: 0;
+  visibility: hidden;
+
+  &.scrolled {
+    opacity: 1;
+    visibility: visible;
+    bottom: 20px;
+  }
+}
+
+/* Style the tab */
+.tab {
+  background: #fff;
+  border-bottom: solid 1px darken($body, 10%);
+
+  .tablinks {
+    position: relative;
+
+    color: #999;
+
+    display: inline-block;
+    background-color: inherit;
+    border-bottom: solid 1px #fff;
+  }
+
+  .tablinks:hover {
+    background: $body;
+  }
+
+  .tablinks.active {
+    color: $dark-txt;
+    border-color: darken($body, 30%);
+  }
+}
+
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+  overflow: hidden;
+
+  &-404 {
+    height: 100vh;
+
+    .error {
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      &::before {
+        content: "404";
+
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        bottom: 0%;
+        right: 0%;
+
+        color: darken($body, 5%);
+        letter-spacing: 2rem;
+        font-weight: bolder;
+        font-size: 35vw;
+
+        display: grid;
+        place-items: center;
+
+        z-index: -1;
+      }
+
+      main {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        min-width: 50vw;
+        text-align: center;
+
+        @media (max-width: $mobile-lc) {
+          width: 100vw;
+        }
+
+        .input-wrapper {
+          display: flex;
+          border: solid 1px darken($body, 10%);
+          overflow: hidden;
+
+          input {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// The content container !header && !footer
+.content {
+  padding-top: 90px;
+  margin: auto;
+
+  position: relative;
+
+  width: 100%;
+  color: $dark-txt;
+
+  @media (max-width: $tablet-lc) {
+    padding-top: 75px;
+  }
+
+  @media (max-width: $tablet) {
+    padding-top: 50px;
+  }
+
+  &-about {
+    &-text {
+      margin: auto;
+      width: 80%;
+
+      @media (max-width: $tablet) {
+        width: 95%;
+      }
+    }
+  }
+
+  // Blog post page content container
+  &-category {
+    .card--overlay {
+      height: unset;
+    }
+
+    .category {
+      &-header {
+        position: relative;
+        width: 100%;
+        height: 40vh;
+
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+        overflow: hidden;
+
+        @media (max-width: $mobile) {
+          height: 30vh;
+        }
+
+        @media (min-width: $desktop) {
+          height: 25vh;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          bottom: 0%;
+          right: 0%;
+          background: rgba(0, 0, 0, 0.7);
+        }
+
+        .category-name {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fff;
+
+          h1 {
+            font-family: "cardText";
+            letter-spacing: 1.5rem;
+            text-transform: uppercase;
+
+            @media (max-width: $mobile) {
+              letter-spacing: 1rem;
+            }
+          }
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  // Blog post page content container
+  &-blog {
+    margin: auto;
+
+    .blog-post {
+      &-img {
+        margin: auto;
+
+        max-height: 500px;
+        width: 100%;
+        overflow: hidden;
+
+        &-mid {
+          margin: 0% auto;
+          width: 100%;
+        }
+
+        img {
+          height: 100%;
+        }
+      }
+
+      &-details {
+        margin: 30px auto;
+      }
+
+      &-author {
+        margin: 20px auto 0;
+
+        max-width: 300px;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 0.75em;
+
+        &-img {
+          height: 30px;
+          width: 30px;
+          flex: 0 0 30px;
+          border-radius: 50%;
+
+          overflow: hidden;
+        }
+      }
+
+      &-content {
+        margin: auto;
+
+        h2 {
+          opacity: 0.3;
+        }
+
+        p {
+          text-indent: 3em;
+        }
+      }
+    }
+
+    .more-posts {
+      .card {
+        h2,
+        h3 {
+          font-family: "mainHeading";
+        }
+      }
+    }
+  }
+}
+
+.cms_content {
+  padding: 85px 10px;
+
+  position: relative;
+
+  width: 100%;
+  min-height: 80vh;
+
+  .cms_notice {
+    padding: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    @media (max-width: $mobile-lc) {
+      width: 100%;
+    }
+
+    .con {
+      margin: auto;
+      margin-bottom: 20px;
+
+      height: 60px;
+      width: 60px;
+
+      border-radius: 50%;
+      background: darken($body, 5%);
+
+      font-size: 1.5em;
+      text-align: center;
+      line-height: 60px;
+    }
+  }
+}
+
+// The section element.
+// Responsible for holding different sections of the blog
+section {
+  padding: 0 5px;
+  margin: auto;
+
+  position: relative;
+
+  text-align: right;
+
+  background: #fff;
+
+  overflow: hidden;
+
+  @media (max-width: $mobile) {
+    width: 100vw;
+    margin: 0 -5px;
+  }
+
+  // All the category styling && colors
+  .tag {
+    padding: 5px;
+    margin: 0 -5px 10px -5px;
+    border-top: solid 1px #000;
+
+    h1 {
+      font-family: "lightText";
+      position: relative;
+      display: inline-block;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 110%;
+        border-top: solid 1px;
+        width: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &--trending {
+      @extend .tag;
+      @include tag(trending, true, true, false);
+    }
+
+    &--popular {
+      @extend .tag;
+      @include tag(popular, true, true, false);
+    }
+
+    &--featured {
+      @extend .tag;
+      @include tag(featured, true, true, false);
+    }
+
+    &--news {
+      @extend .tag;
+      @include tag(news, true, true, false);
+    }
+
+    &--sports {
+      @extend .tag;
+      @include tag(sports, true, true, false);
+    }
+
+    &--music {
+      @extend .tag;
+      @include tag(music, true, true, false);
+    }
+
+    &--web-dev {
+      @extend .tag;
+      @include tag(webdev, true, true, false);
+    }
+
+    &--movies {
+      @extend .tag;
+      @include tag(movies, true, true, false);
+    }
+
+    &--tech {
+      @extend .tag;
+      @include tag(tech, true, true, false);
+    }
+
+    &--accent {
+      @extend .tag;
+      @include tag(accent, true, true, false);
+    }
+  }
+}
