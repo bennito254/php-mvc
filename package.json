@@ -1,14 +1,14 @@
 {
-  "name": "php_mvc",
+  "name": "php-mvc",
   "version": "1.0.0",
-  "description": "A simple php MVC model for noobies.",
-  "main": "app.js",
+  "description": "Php MVC model from scratch.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rojaz813/php-mvc.git"
+    "url": "git+https://github.com/rojaz813/php-mvc.git"
   },
   "keywords": [
     "php",
@@ -33,5 +33,9 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.1.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/rojaz813/php-mvc/issues"
+  },
+  "homepage": "https://github.com/rojaz813/php-mvc#readme"
 }

@@ -112,7 +112,7 @@ exports.jsmin = jsMin;
 // Watch all the files for changes and stream/reload for changes
 function php(cb) {
    phpServe.server({
-      base: './src',
+      base: './public',
       port: 8080,
       keepalive: true
    });
@@ -125,7 +125,7 @@ const sync = gulp.series(php, (cb) => {
    browserSync.init({
       proxy: 'http://phpmvc.test',
       port: 3001,
-      baseDir: './src',
+      baseDir: './public',
       open: true,
       notify: false,
 
