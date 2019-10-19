@@ -17,11 +17,11 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
    <title>Probe</title>
 
    <!-- App icons -->
-   <link rel="shortcut icon" href="./lib/favicons/favicon.png" type="image/png">
-   <link rel="icon" href="./lib/favicons/favicon.png" type="image/png">
+   <link rel="shortcut icon" href="../lib/favicons/favicon.png" type="image/png">
+   <link rel="icon" href="../lib/favicons/favicon.png" type="image/png">
 
    <!-- Main styles -->
-   <link rel="stylesheet" href="./lib/css/styles.css">
+   <link rel="stylesheet" href="../lib/css/styles.css">
 
    <!-- Fontawesome -->
    <script src="https://kit.fontawesome.com/885fbd8d84.js"></script>
@@ -33,7 +33,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
    <!-- Document loaders -->
    <!-- <div id="loader" class="holder">
       <div class="loader">
-         <img src="./lib/favicons/primary-logo.png" alt="Probe">
+         <img src="../lib/favicons/primary-logo.png" alt="Probe">
       </div>
    </div> -->
 
@@ -48,7 +48,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
       <header id="desktopHeader" class="header">
          <nav id="desktopNav" class="header_nav">
             <div class="header_logo">
-               <a href="/"><img src="./lib/favicons/logo.png" alt="Probe logo"></a>
+               <a href="/"><img src="../lib/favicons/logo.png" alt="Probe logo"></a>
             </div>
             <ul class="menu">
                <li><a class="active" href="/">Home</a></li>
@@ -112,7 +112,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
          <nav id="mobileNav" class="header_nav">
             <div class="header_main">
                <div class="header_logo">
-                  <a href="/"><img src="./lib/favicons/logo.png" alt="Probe logo"></a>
+                  <a href="/"><img src="../lib/favicons/logo.png" alt="Probe logo"></a>
                </div>
                <div class="header_nav-controlls">
                   <button id="headerSearchFormToggle" class="btn btn-icon--circle search-toggle-btn"><i class="fas fa-search"></i></button>
@@ -136,7 +136,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
             <div id="mobileMenuItems" class="menu_nav">
                <div class="menu_header">
                   <div class="menu_logo">
-                     <img src="./lib/favicons/primary-logo.png" alt="Probe">
+                     <img src="../lib/favicons/primary-logo.png" alt="Probe">
                   </div>
                   <button id="mobileMenuClose" class="btn btn-icon--circle"><i class="fas fa-times"></i></button>
                </div>
@@ -195,7 +195,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
             <div class="col-7">
                <div class="card card--overlay card--overlay-theme curved">
                   <div class="card_head card_head-mini">
-                     <a href="#"><img src="./lib/media/images/burner.jpg" alt="Slide1"></a>
+                     <a href="#"><img src="../lib/media/images/burner.jpg" alt="Slide1"></a>
                   </div>
                   <div class="card_body">
                      <div class="card_tags">
@@ -206,7 +206,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      </div>
                      <div class="card_author">
                         <div class="card_author_image">
-                           <a href="./blog.html"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                           <a href="./blog.html"><img src="../lib/media/images/author.jpg" alt="author"></a>
                         </div>
                         <div class="card_author_name">
                            <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -229,7 +229,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                <div class="flex-box mg-b-3">
                   <div class="flex-item card card-mini bg-white border curved mg-r-2">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/slide1.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/slide1.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -240,7 +240,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -256,7 +256,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="flex-item card card-mini bg-white border curved mg-r-2">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/slide2.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/slide2.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -267,7 +267,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -283,7 +283,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="flex-item card card-mini bg-white border curved mg-r-2">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/slide3.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/slide3.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -294,7 +294,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -319,7 +319,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   <div id="trending" class="tabcontent pd-2">
                      <div class="card card--overlay-dark curved">
                         <div class="card_head card_head-mini">
-                           <a href="#"><img src="./lib/media/images/trending.png" alt="Slide1"></a>
+                           <a href="#"><img src="../lib/media/images/trending.png" alt="Slide1"></a>
                         </div>
                         <div class="card_body">
                            <div class="card_tags">
@@ -330,7 +330,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                            </div>
                            <div class="card_author">
                               <div class="card_author_image">
-                                 <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                 <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                               </div>
                               <div class="card_author_name">
                                  <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -355,7 +355,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      <div class="flex-box">
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/trending.png" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/trending.png" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -366,7 +366,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -382,7 +382,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/trending.png" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/trending.png" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -393,7 +393,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -409,7 +409,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/trending.png" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/trending.png" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -420,7 +420,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -440,7 +440,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   <div id="popular" class="tabcontent pd-2">
                      <div class="card card--overlay-dark bg-white curved">
                         <div class="card_head card_head-mini">
-                           <a href="#"><img src="./lib/media/images/popular.jpg" alt="Slide1"></a>
+                           <a href="#"><img src="../lib/media/images/popular.jpg" alt="Slide1"></a>
                         </div>
                         <div class="card_body">
                            <div class="card_tags">
@@ -451,7 +451,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                            </div>
                            <div class="card_author">
                               <div class="card_author_image">
-                                 <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                 <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                               </div>
                               <div class="card_author_name">
                                  <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -476,7 +476,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      <div class="flex-box">
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/popular.jpg" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/popular.jpg" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -487,7 +487,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -503,7 +503,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/popular.jpg" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/popular.jpg" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -514,7 +514,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -530,7 +530,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/popular.jpg" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/popular.jpg" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -541,7 +541,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -561,7 +561,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   <div id="featured" class="tabcontent pd-2">
                      <div class="card card--overlay-dark bg-white curved">
                         <div class="card_head card_head-mini">
-                           <a href="#"><img src="./lib/media/images/featured.jpg" alt="Slide1"></a>
+                           <a href="#"><img src="../lib/media/images/featured.jpg" alt="Slide1"></a>
                         </div>
                         <div class="card_body">
                            <div class="card_tags">
@@ -572,7 +572,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                            </div>
                            <div class="card_author">
                               <div class="card_author_image">
-                                 <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                 <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                               </div>
                               <div class="card_author_name">
                                  <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -597,7 +597,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      <div class="flex-box">
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/featured.jpg" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/featured.jpg" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -608,7 +608,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -624,7 +624,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/featured.jpg" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/featured.jpg" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -635,7 +635,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -651,7 +651,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card card-mini bg-white border curved mg-r-2 flex-item">
                            <div class="card_head card_head-mini">
-                              <a href="#"><img src="./lib/media/images/featured.jpg" alt="Slide1"></a>
+                              <a href="#"><img src="../lib/media/images/featured.jpg" alt="Slide1"></a>
                            </div>
                            <div class="card_body">
                               <div class="card_tags">
@@ -662,7 +662,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                               </div>
                               <div class="card_author">
                                  <div class="card_author_image">
-                                    <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                                    <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                                  </div>
                                  <div class="card_author_name">
                                     <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -681,7 +681,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                </div>
                <div class="card card--flex-mini bg-white border curved">
                   <div class="card_head card_head-mini">
-                     <a href="#"><img src="./lib/media/images/recent1.jpg" alt="Slide1"></a>
+                     <a href="#"><img src="../lib/media/images/recent1.jpg" alt="Slide1"></a>
                   </div>
                   <div class="card_body">
                      <div class="card_tags">
@@ -692,7 +692,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      </div>
                      <div class="card_author">
                         <div class="card_author_image">
-                           <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                           <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                         </div>
                         <div class="card_author_name">
                            <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -708,7 +708,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                </div>
                <div class="card card--flex-mini bg-white border curved">
                   <div class="card_head card_head-mini">
-                     <a href="#"><img src="./lib/media/images/recent2.jpg" alt="Slide1"></a>
+                     <a href="#"><img src="../lib/media/images/recent2.jpg" alt="Slide1"></a>
                   </div>
                   <div class="card_body">
                      <div class="card_tags">
@@ -719,7 +719,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      </div>
                      <div class="card_author">
                         <div class="card_author_image">
-                           <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                           <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                         </div>
                         <div class="card_author_name">
                            <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -735,7 +735,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                </div>
                <div class="card card--flex-mini bg-white border curved">
                   <div class="card_head card_head-mini">
-                     <a href="#"><img src="./lib/media/images/recent3.jpg" alt="Slide1"></a>
+                     <a href="#"><img src="../lib/media/images/recent3.jpg" alt="Slide1"></a>
                   </div>
                   <div class="card_body">
                      <div class="card_tags">
@@ -746,7 +746,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                      </div>
                      <div class="card_author">
                         <div class="card_author_image">
-                           <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                           <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                         </div>
                         <div class="card_author_name">
                            <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -773,7 +773,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="card card--flex-mini bg-white border curved">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/news.gif" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/news.gif" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -784,7 +784,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -810,7 +810,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="card card--flex-mini bg-white border curved">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/sports.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/sports.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -821,7 +821,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -847,7 +847,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="card card--flex-mini bg-white border curved">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/movie.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/movie.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -858,7 +858,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -884,7 +884,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="card card--flex-mini bg-white border curved">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/music.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/music.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -895,7 +895,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -921,7 +921,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="card card--flex-mini bg-white border curved">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/tech.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/tech.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -932,7 +932,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -958,7 +958,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                   </div>
                   <div class="card card--flex-mini bg-white border curved">
                      <div class="card_head card_head-mini">
-                        <a href="#"><img src="./lib/media/images/webdev.jpg" alt="Slide1"></a>
+                        <a href="#"><img src="../lib/media/images/webdev.jpg" alt="Slide1"></a>
                      </div>
                      <div class="card_body">
                         <div class="card_tags">
@@ -969,7 +969,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
                         </div>
                         <div class="card_author">
                            <div class="card_author_image">
-                              <a href="#"><img src="./lib/media/images/author.jpg" alt="author"></a>
+                              <a href="#"><img src="../lib/media/images/author.jpg" alt="author"></a>
                            </div>
                            <div class="card_author_name">
                               <a href="#"><strong>Emmanuel Karanja</strong></a>
@@ -997,7 +997,7 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
       <footer id="footer" class="footer">
          <div class="foo foo_contact">
             <div class="foo_logo">
-               <a href="/"><img src="./lib/favicons/dark-logo.png" alt="Probe"></a>
+               <a href="/"><img src="../lib/favicons/dark-logo.png" alt="Probe"></a>
             </div>
             <div class="foo_handles">
                <p><i class="fas fa-map-marker-alt"></i> Kenya, Nairobi</p>
@@ -1045,8 +1045,8 @@ echo 'Hello! ' . $data['name'] . ' is ' . $data['age'] . ' years old';
    </div>
 
    <!-- Scripts -->
-   <script type="text/javascript" src="./lib/js/main.js"></script>
-   <script src="./lib/js/tabs.js"></script>
+   <script type="text/javascript" src="../lib/js/main.js"></script>
+   <script src="../lib/js/tabs.js"></script>
 
 
 </body>
