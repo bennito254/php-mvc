@@ -14,7 +14,7 @@
   }
 
   .header_nav {
-    padding: 10px 20px;
+    padding: 20px;
 
     position: fixed;
     top: 0%;
@@ -31,20 +31,14 @@
     z-index: 10;
 
     &.scrolled {
-      padding: 0 10px;
+      padding: 10px;
       box-shadow: 0 0 10px $shadow-light;
     }
   }
 
   // The header logo
   .header_logo {
-    height: 70px;
-    width: 90px;
-
-    @media (max-width: $tablet-lc) {
-      height: 50px;
-      width: 70px;
-    }
+    width: 100px;
   }
 
   .menu,
@@ -179,6 +173,7 @@
     overflow: hidden;
 
     .input {
+      padding: 10px 15px;
       border: none;
     }
 
@@ -210,16 +205,11 @@
   }
 
   .header_nav {
+    padding: 7px 5px;
     position: fixed;
     top: 0%;
 
     width: 100%;
-    min-height: 60px;
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-between;
 
     background: #fff;
     border-bottom: solid 1px darken($body, 10%);
@@ -228,11 +218,18 @@
     z-index: 9;
 
     &.scrolled {
-      box-shadow: 0 0 10px $shadow-light;
+      box-shadow: 0 0 5px $shadow-light;
     }
 
-    @media (max-width: $tablet) {
-      padding: 0 30px 0 10px;
+    .header_main {
+      padding: 5px;
+      margin: auto;
+      width: 100%;
+
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .header_nav-controlls {
@@ -241,7 +238,7 @@
 
       .search-toggle-btn,
       .menu-toggle-btn {
-        margin: 0 3px;
+        margin: 0 5px;
         font-size: normal;
         background: none;
       }
@@ -250,9 +247,8 @@
 
   // The header logo
   .header_logo {
-    margin: 0 30px;
-    height: 50px;
-    width: 70px;
+    margin: 0 20px;
+    width: 80px;
   }
 
   .menu-toggle-btn {
@@ -329,7 +325,7 @@
     }
 
     .menu_header {
-      padding: 10px 20px;
+      padding: 15px 20px;
       margin: 0 0 20px 0;
 
       position: sticky;
@@ -338,19 +334,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: $body;
+      background: #fff;
       border-bottom: solid 1px darken($body, 10%);
 
       .btn {
-        background: darken($body, 5%);
+        background: transparent;
       }
     }
 
     .menu_logo {
-      height: 60px;
-      width: 60px;
+      width: 100px;
 
-      border-radius: 50%;
       overflow: hidden;
 
       img {
@@ -428,12 +422,7 @@
 
   // The header search form
   .header_search-form {
-    margin-left: 12px;
-    flex: 0 0 100%;
     display: none;
-
-    overflow: hidden;
-    transition: all 0.5s ease-in;
 
     &.active {
       display: block;
@@ -441,14 +430,15 @@
 
     // The search form
     .form {
+      padding: 5px;
       margin: auto;
-      padding: 0%;
       width: 100%;
 
       .input-wrapper {
         display: flex;
         border-radius: 25px;
         background: darken(#fff, 3%);
+        border: none;
 
         overflow: hidden;
 
@@ -491,8 +481,11 @@
 
   .logo {
     margin: 0 20px;
-    height: 50px;
-    width: 70px;
+    width: 100px;
+
+    @media (max-width: $mobile-lc) {
+      width: 80px;
+    }
   }
 
   .cms_header_form {
@@ -526,12 +519,12 @@
     }
 
     @media (max-width: $mobile-lc) {
+      padding: 0 10px;
+
       position: absolute;
       top: 100%;
-      width: 100%;
-
-      margin-left: -10px;
-      padding: 0 10px;
+      left: 0%;
+      right: 0%;
 
       display: none;
       background: #fff;
@@ -567,7 +560,7 @@
       }
 
       .search_toggle {
-        @media (min-width: ($mobile)) {
+        @media (min-width: ($mobile-lc)) {
           display: none;
         }
       }
@@ -595,6 +588,16 @@
 
         cursor: pointer;
         overflow: hidden;
+
+        @media (max-width: $tablet) {
+          height: 35px;
+          width: 35px;
+        }
+
+        @media (max-width: $mobile-lc) {
+          height: 30px;
+          width: 30px;
+        }
       }
 
       &_details {
@@ -623,7 +626,7 @@
 
     &_menu {
       position: absolute;
-      top: 155%;
+      top: 140%;
       right: -13px;
       visibility: hidden;
       opacity: 0;
@@ -631,7 +634,7 @@
       z-index: 10;
 
       &.active {
-        top: 140%;
+        top: 125%;
         opacity: 1;
         visibility: visible;
       }
@@ -770,11 +773,7 @@
       }
 
       .foo_logo {
-        height: 200px;
-        width: 200px;
-
-        border-radius: 50%;
-        box-shadow: none;
+        width: 300px;
 
         overflow: hidden;
 

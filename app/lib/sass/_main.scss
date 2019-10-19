@@ -280,6 +280,10 @@
   width: 100%;
   min-height: 80vh;
 
+  @media (max-width: $mobile-lc) {
+    padding: 60px 10px;
+  }
+
   .cms_notice {
     padding: 20px;
 

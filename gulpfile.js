@@ -36,7 +36,7 @@ const paths = {
    },
    jsmini: {
       src: ["./public/js/**/*.js"],
-      dest: "./public/js"
+      dest: "./public/js/main.js"
    },
    html: {
       src: "./app/views/**/*.html"
@@ -93,7 +93,9 @@ exports.es6 = es6;
 // Concat `js` files to `main.js` file
 function concatjs() {
    return gulp.src(paths.js.src)
+      .pipe(srcmaps.init())
       .pipe(concat('main.js'))
+      .pipe(srcmaps.write(paths.js.map))
       .pipe(gulp.dest(paths.js.dest))
       .pipe(browserSync.stream());
 }
@@ -102,12 +104,14 @@ exports.concatjs = concatjs;
 // Concat `js` files to `main.js` file
 const jsMin = gulp.series(concatjs, (cb) => {
    gulp.src(paths.jsmini.src)
+      .pipe(srcmaps.init())
       .pipe(jsmini())
+      .pipe(gulp.dest(paths.js.dest))
       .pipe(gulp.dest(paths.jsmini.dest));
 
    cb();
 });
-exports.jsmin = jsMin;
+exports.jsMin = jsMin;
 
 // Watch all the files for changes and stream/reload for changes
 function php(cb) {

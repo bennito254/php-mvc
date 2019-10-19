@@ -2494,7 +2494,7 @@ blockquote {
   color: #333; }
 
 .header .header_nav {
-  padding: 10px 20px;
+  padding: 20px;
   position: fixed;
   top: 0%;
   width: 100%;
@@ -2511,17 +2511,12 @@ blockquote {
   background: #fff;
   z-index: 10; }
   .header .header_nav.scrolled {
-    padding: 0 10px;
+    padding: 10px;
     -webkit-box-shadow: 0 0 10px #adadad;
             box-shadow: 0 0 10px #adadad; }
 
 .header .header_logo {
-  height: 70px;
-  width: 90px; }
-  @media (max-width: 1112px) {
-    .header .header_logo {
-      height: 50px;
-      width: 70px; } }
+  width: 100px; }
 
 .header .menu,
 .header .controlls {
@@ -2625,6 +2620,7 @@ blockquote {
   .header .header_search-form .label-input--fill, .header .header_search-form .input--edgy,
   .header .header_search-form .label-input--edgy, .header .header_search-form .input--rounded,
   .header .header_search-form .label-input--rounded {
+    padding: 10px 15px;
     border: none; }
   .header .header_search-form.active {
     opacity: 1;
@@ -2647,33 +2643,34 @@ blockquote {
   color: #333; }
 
 .header-mobile .header_nav {
+  padding: 7px 5px;
   position: fixed;
   top: 0%;
   width: 100%;
-  min-height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background: #fff;
   border-bottom: solid 1px #e0e0e0;
   overflow: hidden;
   z-index: 9; }
   .header-mobile .header_nav.scrolled {
-    -webkit-box-shadow: 0 0 10px #adadad;
-            box-shadow: 0 0 10px #adadad; }
-  @media (max-width: 834px) {
-    .header-mobile .header_nav {
-      padding: 0 30px 0 10px; } }
+    -webkit-box-shadow: 0 0 5px #adadad;
+            box-shadow: 0 0 5px #adadad; }
+  .header-mobile .header_nav .header_main {
+    padding: 5px;
+    margin: auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .header-mobile .header_nav .header_nav-controlls {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2683,14 +2680,13 @@ blockquote {
             justify-content: space-evenly; }
     .header-mobile .header_nav .header_nav-controlls .search-toggle-btn,
     .header-mobile .header_nav .header_nav-controlls .menu-toggle-btn {
-      margin: 0 3px;
+      margin: 0 5px;
       font-size: normal;
       background: none; }
 
 .header-mobile .header_logo {
-  margin: 0 30px;
-  height: 50px;
-  width: 70px; }
+  margin: 0 20px;
+  width: 80px; }
 
 .header-mobile .menu-toggle-btn .bar1,
 .header-mobile .menu-toggle-btn .bar2,
@@ -2745,7 +2741,7 @@ blockquote {
       -webkit-transform: translateX(0);
               transform: translateX(0); }
   .header-mobile .menu .menu_header {
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 0 0 20px 0;
     position: -webkit-sticky;
     position: sticky;
@@ -2759,14 +2755,12 @@ blockquote {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    background: #f9f9f9;
+    background: #fff;
     border-bottom: solid 1px #e0e0e0; }
     .header-mobile .menu .menu_header .btn, .header-mobile .menu .menu_header .btn--lg, .header-mobile .menu .menu_header .btn--small, .header-mobile .menu .menu_header .btn--fit, .header-mobile .menu .menu_header .btn--half-fit, .header-mobile .menu .menu_header .btn--rounded, .header-mobile .menu .menu_header .btn--edgy, .header-mobile .menu .menu_header .btn-disabled, .header-mobile .menu .menu_header .btn-primary, .header-mobile .menu .menu_header .btn-primary--outline, .header-mobile .menu .menu_header .btn-primary--neutral, .header-mobile .menu .menu_header .btn-secondary, .header-mobile .menu .menu_header .btn-secondary--outline, .header-mobile .menu .menu_header .btn-secondary--neutral, .header-mobile .menu .menu_header .btn-success, .header-mobile .menu .menu_header .btn-success--outline, .header-mobile .menu .menu_header .btn-success--neutral, .header-mobile .menu .menu_header .btn-info, .header-mobile .menu .menu_header .btn-info--outline, .header-mobile .menu .menu_header .btn-info--neutral, .header-mobile .menu .menu_header .btn-dark, .header-mobile .menu .menu_header .btn-dark--outline, .header-mobile .menu .menu_header .btn-dark--neutral, .header-mobile .menu .menu_header .btn-danger, .header-mobile .menu .menu_header .btn-danger--outline, .header-mobile .menu .menu_header .btn-danger--neutral, .header-mobile .menu .menu_header .btn-warning, .header-mobile .menu .menu_header .btn-warning--outline, .header-mobile .menu .menu_header .btn-warning--neutral, .header-mobile .menu .menu_header .btn-icon, .header-mobile .menu .menu_header .btn-icon--circle {
-      background: #ececec; }
+      background: transparent; }
   .header-mobile .menu .menu_logo {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    width: 100px;
     overflow: hidden; }
     .header-mobile .menu .menu_logo img {
       -webkit-transform: scale(0.8);
@@ -2822,19 +2816,12 @@ blockquote {
     color: #fff; }
 
 .header-mobile .header_search-form {
-  margin-left: 12px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  display: none;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in; }
+  display: none; }
   .header-mobile .header_search-form.active {
     display: block; }
   .header-mobile .header_search-form .form {
+    padding: 5px;
     margin: auto;
-    padding: 0%;
     width: 100%; }
     .header-mobile .header_search-form .form .input-wrapper, .header-mobile .header_search-form .form .input-wrapper--outer, .header-mobile .header_search-form .form .input-wrapper--inner, .header-mobile .header_search-form .form .input-wrapper--inner-dent, .header-mobile .header_search-form .form .input-wrapper--radio, .header-mobile .header_search-form .form .input-wrapper--chkbox {
       display: -webkit-box;
@@ -2842,6 +2829,7 @@ blockquote {
       display: flex;
       border-radius: 25px;
       background: #f7f7f7;
+      border: none;
       overflow: hidden; }
       .header-mobile .header_search-form .form .input-wrapper:focus-within, .header-mobile .header_search-form .form .input-wrapper--outer:focus-within, .header-mobile .header_search-form .form .input-wrapper--inner:focus-within, .header-mobile .header_search-form .form .input-wrapper--inner-dent:focus-within, .header-mobile .header_search-form .form .input-wrapper--radio:focus-within, .header-mobile .header_search-form .form .input-wrapper--chkbox:focus-within {
         border-color: #f05555; }
@@ -2880,8 +2868,10 @@ blockquote {
   z-index: 10; }
   .cms_header .logo {
     margin: 0 20px;
-    height: 50px;
-    width: 70px; }
+    width: 100px; }
+    @media (max-width: 577px) {
+      .cms_header .logo {
+        width: 80px; } }
   .cms_header .cms_header_form {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -2915,11 +2905,11 @@ blockquote {
           align-self: center; }
     @media (max-width: 577px) {
       .cms_header .cms_header_form {
+        padding: 0 10px;
         position: absolute;
         top: 100%;
-        width: 100%;
-        margin-left: -10px;
-        padding: 0 10px;
+        left: 0%;
+        right: 0%;
         display: none;
         background: #fff;
         border-bottom: solid 1px #e0e0e0; } }
@@ -2947,7 +2937,7 @@ blockquote {
       display: flex; }
       .cms_header .profile .admin_controlls .btn, .cms_header .profile .admin_controlls .btn--lg, .cms_header .profile .admin_controlls .btn--small, .cms_header .profile .admin_controlls .btn--fit, .cms_header .profile .admin_controlls .btn--half-fit, .cms_header .profile .admin_controlls .btn--rounded, .cms_header .profile .admin_controlls .btn--edgy, .cms_header .profile .admin_controlls .btn-disabled, .cms_header .profile .admin_controlls .btn-primary, .cms_header .profile .admin_controlls .btn-primary--outline, .cms_header .profile .admin_controlls .btn-primary--neutral, .cms_header .profile .admin_controlls .btn-secondary, .cms_header .profile .admin_controlls .btn-secondary--outline, .cms_header .profile .admin_controlls .btn-secondary--neutral, .cms_header .profile .admin_controlls .btn-success, .cms_header .profile .admin_controlls .btn-success--outline, .cms_header .profile .admin_controlls .btn-success--neutral, .cms_header .profile .admin_controlls .btn-info, .cms_header .profile .admin_controlls .btn-info--outline, .cms_header .profile .admin_controlls .btn-info--neutral, .cms_header .profile .admin_controlls .btn-dark, .cms_header .profile .admin_controlls .btn-dark--outline, .cms_header .profile .admin_controlls .btn-dark--neutral, .cms_header .profile .admin_controlls .btn-danger, .cms_header .profile .admin_controlls .btn-danger--outline, .cms_header .profile .admin_controlls .btn-danger--neutral, .cms_header .profile .admin_controlls .btn-warning, .cms_header .profile .admin_controlls .btn-warning--outline, .cms_header .profile .admin_controlls .btn-warning--neutral, .cms_header .profile .admin_controlls .btn-icon, .cms_header .profile .admin_controlls .btn-icon--circle {
         margin-left: 10px; }
-      @media (min-width: 425px) {
+      @media (min-width: 577px) {
         .cms_header .profile .admin_controlls .search_toggle {
           display: none; } }
       .cms_header .profile .admin_controlls .notifications {
@@ -2966,6 +2956,14 @@ blockquote {
       border-radius: 50%;
       cursor: pointer;
       overflow: hidden; }
+      @media (max-width: 834px) {
+        .cms_header .profile .admin_avatar {
+          height: 35px;
+          width: 35px; } }
+      @media (max-width: 577px) {
+        .cms_header .profile .admin_avatar {
+          height: 30px;
+          width: 30px; } }
     .cms_header .profile .admin_details {
       padding: 10px;
       display: -webkit-box;
@@ -2987,13 +2985,13 @@ blockquote {
       font-size: 0.7em; }
     .cms_header .profile_menu {
       position: absolute;
-      top: 155%;
+      top: 140%;
       right: -13px;
       visibility: hidden;
       opacity: 0;
       z-index: 10; }
       .cms_header .profile_menu.active {
-        top: 140%;
+        top: 125%;
         opacity: 1;
         visibility: visible; }
       .cms_header .profile_menu .btn, .cms_header .profile_menu .btn--lg, .cms_header .profile_menu .btn--small, .cms_header .profile_menu .btn--fit, .cms_header .profile_menu .btn--half-fit, .cms_header .profile_menu .btn--rounded, .cms_header .profile_menu .btn--edgy, .cms_header .profile_menu .btn-disabled, .cms_header .profile_menu .btn-primary, .cms_header .profile_menu .btn-primary--outline, .cms_header .profile_menu .btn-primary--neutral, .cms_header .profile_menu .btn-secondary, .cms_header .profile_menu .btn-secondary--outline, .cms_header .profile_menu .btn-secondary--neutral, .cms_header .profile_menu .btn-success, .cms_header .profile_menu .btn-success--outline, .cms_header .profile_menu .btn-success--neutral, .cms_header .profile_menu .btn-info, .cms_header .profile_menu .btn-info--outline, .cms_header .profile_menu .btn-info--neutral, .cms_header .profile_menu .btn-dark, .cms_header .profile_menu .btn-dark--outline, .cms_header .profile_menu .btn-dark--neutral, .cms_header .profile_menu .btn-danger, .cms_header .profile_menu .btn-danger--outline, .cms_header .profile_menu .btn-danger--neutral, .cms_header .profile_menu .btn-warning, .cms_header .profile_menu .btn-warning--outline, .cms_header .profile_menu .btn-warning--neutral, .cms_header .profile_menu .btn-icon, .cms_header .profile_menu .btn-icon--circle {
@@ -3112,11 +3110,7 @@ blockquote {
         font-size: 0.9em;
         line-height: 3; }
       .footer .foo_contact .foo_logo {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        -webkit-box-shadow: none;
-                box-shadow: none;
+        width: 300px;
         overflow: hidden; }
         .footer .foo_contact .foo_logo a {
           display: block;
@@ -3432,6 +3426,9 @@ blockquote {
   position: relative;
   width: 100%;
   min-height: 80vh; }
+  @media (max-width: 577px) {
+    .cms_content {
+      padding: 60px 10px; } }
   .cms_content .cms_notice {
     padding: 20px;
     position: absolute;
